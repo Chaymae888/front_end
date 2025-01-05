@@ -1,0 +1,310 @@
+.work_filters{
+    display: flex;
+    align-items: center;
+    column-gap: 1.875rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+.work_item{
+    cursor:pointer;
+    font-weight: var(--font-bold);
+    transition: .3s;
+
+}
+.work_item:hover{
+    color:var(--first-color);
+
+}
+
+.fa-solid.fa-heart{
+    color: hsl(43, 100%, 68%);
+}
+
+.work_container{
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.875rem;
+}
+
+.work_card{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work_card:hover {
+    transform: translateY(-10px); /* Moves the card 10px upward */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect on hover */
+  }
+
+.work_mask{
+    background-color: #ffff;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height: 30%;
+    width: 100%;
+    transition: .3s;
+    opacity: 0.9;
+}
+.work_button{
+    color:#fff;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-size: var(--h3-font-size);
+    display: block;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    transition: .3s;
+    opacity: 1;
+}
+
+.likes{
+    right: 0;
+    
+}
+.iconn{
+    color: var(--title-color);
+    transition: .3s;
+}
+
+.iconn:hover{
+    color: hsl(43, 100%, 68%);
+}
+
+.like_container {
+    display: flex;            
+    position: absolute;   
+    bottom: 0; 
+ 
+  }
+.numberoflikes {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    position: relative;
+    bottom:1.5rem;
+    left: 3.7rem;
+
+  }
+
+.space{
+    
+    left: 15.5rem;
+}
+
+.work_card{
+    opacity: 1;
+}
+
+.item-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    height: 95%; 
+    align-content: space-between;
+    justify-content: flex-start;
+    width: 95%;
+    transform: translateY(-20px); /* Start position: 10px down */
+  opacity: 0;                  /* Start with opacity 0 */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+      
+  }
+  
+  .item-container img {
+    width: 45%; 
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item-details-container {
+    flex-direction: column;
+    margin-bottom: 20px;
+    height: 100%;
+  }
+
+  .item-title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 50px;
+  }
+
+  .category_container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    justify-items: start;
+  }
+  
+  
+
+  
+
+.like_container_model {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    gap: 10px;
+    left: 0;
+    margin-top: 1.5rem;
+ 
+  }
+.numberoflikes_model {
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    bottom: -2rem;
+    left: 2.5rem; 
+    position: absolute;
+
+  }
+
+  .like_model{
+    display: flex;            
+    position: absolute;   
+    bottom: -1.5rem;
+    left: 1rem; 
+ 
+  }
+
+  .modal-arrows {
+    position: fixed; /* Fix the arrows relative to the viewport */
+    top: 50%; /* Vertically center the arrows */
+    left: 0; /* Align left arrow to the left edge */
+    right: 0; /* Align right arrow to the right edge */
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 20; /* Ensure arrows are on top of the modal */
+    padding: 0 10px; /* Add some padding on the left and right sides */
+  }
+  
+  .arrow-left, .arrow-right {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff; /* Customize the arrow color */
+    cursor: pointer;
+    padding: 1rem;
+  }
+  
+  .arrow-left:hover, .arrow-right:hover {
+    color: hsl(43, 100%, 68%); /* Highlight the arrows on hover */
+  }
+  
+  .arrow-left {
+    font-size: 260%;
+    margin-left: 30px; 
+  }
+  
+  .arrow-right {
+    font-size: 260%;
+    margin-right: 30px; 
+  }
+  
+  .Model {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Center modal perfectly */
+    z-index: 15; /* Ensure the modal is on top of other content */
+  }
+  .show {
+    transform: translateY(0);    /* Move to the normal position */
+    opacity: 1;                  /* Full opacity */
+  }
+  
+  
+ 
+
+  
+  /* Title Styling */
+  
+  
+ 
+  
+  
+  /* Description and Category Styling */
+
+  .item-description,
+  .item-category,
+  .item-liengithub {
+    font-size: var(--h3-font-size);
+    margin-bottom: 8px;
+  }
+
+  .description{
+    font-size: 60%;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    flex-wrap: wrap;
+  }
+  
+ 
+  .liengithub  {
+    color: #007BFF;       /* A blue link color */
+    text-decoration: none;
+  }
+  
+  .liengithub:hover {
+    text-decoration: underline;
+  }
+ 
+  
+
+
+
+@media screen and (max-width:1024px){
+    .work_filters{
+        justify-content: center;
+    }
+    .work_container{
+        grid-template-columns: repeat(2,330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }   
+}
+
+@media screen and (max-width:768px){
+    .work_container{
+        grid-template-columns: 310px;
+    }
+    .work_filters{
+        row-gap: .25rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .work_container{
+        grid-template-columns: 310px;
+        padding: 0 1rem; 
+        margin-left: 5rem;   
+        width: 100%;
+    }
+    .work_filters{
+        row-gap: .25rem;
+        padding: 0 1rem; 
+        margin-left: 7rem; 
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+  }
+@media screen and (max-width: 390px) {
+    .work_container{
+        grid-template-columns: 310px;
+        padding: 0 1rem; 
+        margin-left: 10rem;   
+        width: 100%;
+    }
+    .work_filters{
+        row-gap: .25rem;
+        padding: 0 1rem; 
+        margin-left: 17rem; 
+        justify-content: center;
+    }
+  }
